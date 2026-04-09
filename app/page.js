@@ -50,12 +50,13 @@ export default function BoshSahifa() {
 
   // QR kod skaner qilinganda ochiladigan manzil
   // Agar loyihani internetga qo'ygan bo'lsangiz, o'sha linkni yozing (masalan: https://queue-uz.vercel.app)
-  const saytUrl = "https://queue.uz"; 
+const saytUrl = "https://online-navbat.vercel.app";
 
   const filtered = muassasalar.filter((m) =>
     m.nomi.toLowerCase().includes(searchTerm.toLowerCase()) ||
     m.turi.toLowerCase().includes(searchTerm.toLowerCase())
   );
+  
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
